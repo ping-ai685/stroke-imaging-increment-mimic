@@ -1,0 +1,16 @@
+# Where the raw MIMIC-IV tables are. Every script that reads the database takes the
+# path from here via project_paths.py; edit this file, not the scripts.
+#
+# MIMIC-IV is distributed by PhysioNet under credentialed access and may not be
+# redistributed. Obtain it yourself: https://physionet.org/content/mimiciv/3.1/
+
+[paths]
+research_data = /path/to/your/data
+
+# folder that contains MIMIC/mimic-iv-3.1/mimic-iv-3.1/
+mimic_vmac = %(research_data)s/MIMIC v_mac
+# MIMIC-IV 3.1 tables (the folder holding hosp/ and icu/)
+mimic_iv = %(mimic_vmac)s/MIMIC/mimic-iv-3.1/mimic-iv-3.1
+# MIMIC-IV-Note (radiology reports), used by this study
+mimic_note = %(mimic_vmac)s/note
+eicu = %(research_data)s/eicu-collaborative-research-database-2.0

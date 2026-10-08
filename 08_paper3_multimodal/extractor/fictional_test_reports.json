@@ -1,0 +1,56 @@
+{
+  "_note": "FICTIONAL reports written for pipeline testing. Not MIMIC data; no DUA restriction. Expected values follow ontology v1.1; null = deliberately not scored because the rule is not yet frozen.",
+  "reports": [
+    {
+      "id": "F1",
+      "text": "EXAMINATION: CT HEAD W/O CONTRAST\nINDICATION: 68-year-old with acute left-sided weakness.\nCOMPARISON: CT head from the prior day.\nFINDINGS: Acute intraparenchymal hemorrhage centered in the right basal ganglia measuring 3.2 x 2.1 cm, with surrounding vasogenic edema and mild local mass effect. Blood extends into the right lateral ventricle; the intraventricular hemorrhage is increased compared with the prior study. There is 4 mm leftward shift of midline structures. No hydrocephalus. The basal cisterns are patent, without evidence of herniation. Periventricular white matter hypodensities are consistent with chronic small vessel ischemic disease. No large territorial infarct.\nIMPRESSION:\n1. Right basal ganglia hemorrhage with intraventricular extension, increased from prior.\n2. 4 mm leftward midline shift.\n3. Cannot exclude an underlying mass; follow-up MRI recommended.",
+      "expected": {
+        "acute_infarction": "Absent", "large_territorial_infarct": "Absent",
+        "intracranial_haemorrhage": "Present", "intraventricular_haemorrhage": "Present",
+        "intraventricular_haemorrhage_change": "increased",
+        "cerebral_oedema": "Present", "midline_shift_present": "Present", "midline_shift_mm": 4,
+        "hydrocephalus": "Absent", "mass_effect": "Present", "herniation": "Absent",
+        "chronic_ischaemic_change": "Present", "large_vessel_occlusion": "Not assessable",
+        "haemorrhage_location": ["deep_basal_ganglia"], "infarct_territory": []
+      }
+    },
+    {
+      "id": "F2",
+      "text": "EXAMINATION: MR HEAD W/O CONTRAST\nINDICATION: Aphasia and right hemiparesis.\nFINDINGS: Restricted diffusion involving the left frontal and temporal lobes and the insula, in the left middle cerebral artery territory, consistent with a large acute territorial infarct. Associated cytotoxic edema with mild local mass effect and sulcal effacement; no midline shift. No hemorrhagic transformation. Old right cerebellar infarct. No hydrocephalus. MR angiography was not performed.\nIMPRESSION: Large acute left MCA territory infarct without hemorrhagic transformation.",
+      "expected": {
+        "acute_infarction": "Present", "large_territorial_infarct": "Present",
+        "intracranial_haemorrhage": "Absent", "intraventricular_haemorrhage": "Absent",
+        "cerebral_oedema": "Present", "midline_shift_present": "Absent", "midline_shift_mm": null,
+        "hydrocephalus": "Absent", "mass_effect": "Present", "herniation": null,
+        "chronic_ischaemic_change": "Present", "large_vessel_occlusion": "Not assessable",
+        "infarct_territory": ["MCA"], "haemorrhage_location": []
+      }
+    },
+    {
+      "id": "F3",
+      "text": "EXAMINATION: CT HEAD W/O CONTRAST\nINDICATION: Subarachnoid hemorrhage, follow-up after external ventricular drain.\nCOMPARISON: Two days prior.\nFINDINGS: Diffuse subarachnoid hemorrhage in the basal cisterns and sylvian fissures, decreased compared with the prior study. A small amount of layering intraventricular blood in the occipital horns is unchanged. A right frontal ventriculostomy catheter terminates in the third ventricle. Hydrocephalus has improved, although the ventricles remain enlarged. No midline shift. No new hemorrhage. No evidence of infarction.\nIMPRESSION: Decreasing subarachnoid hemorrhage. Improving but persistent hydrocephalus.",
+      "expected": {
+        "acute_infarction": "Absent", "large_territorial_infarct": null,
+        "intracranial_haemorrhage": "Present", "intracranial_haemorrhage_change": "decreased",
+        "intraventricular_haemorrhage": "Present", "intraventricular_haemorrhage_change": "stable",
+        "cerebral_oedema": null, "midline_shift_present": "Absent", "midline_shift_mm": null,
+        "hydrocephalus": "Present", "hydrocephalus_change": "decreased",
+        "mass_effect": null, "herniation": null, "chronic_ischaemic_change": null,
+        "large_vessel_occlusion": "Not assessable",
+        "haemorrhage_location": ["subarachnoid"], "infarct_territory": []
+      }
+    },
+    {
+      "id": "F4",
+      "text": "EXAMINATION: CT HEAD W/O CONTRAST\nINDICATION: Transient left arm numbness.\nFINDINGS: No acute intracranial hemorrhage. No evidence of acute large territorial infarct. Possible small acute lacunar infarct in the right corona radiata; MRI is more sensitive. The ventricles and sulci are normal in size for age. No mass effect or midline shift. Mild chronic small vessel ischemic change.\nIMPRESSION: No acute hemorrhage. Possible small acute lacunar infarct in the right corona radiata.",
+      "expected": {
+        "acute_infarction": "Uncertain", "large_territorial_infarct": "Absent",
+        "intracranial_haemorrhage": "Absent", "intraventricular_haemorrhage": null,
+        "cerebral_oedema": null, "midline_shift_present": "Absent", "midline_shift_mm": null,
+        "hydrocephalus": "Absent", "mass_effect": "Absent", "herniation": null,
+        "chronic_ischaemic_change": "Present", "large_vessel_occlusion": "Not assessable",
+        "haemorrhage_location": [], "infarct_territory": null
+      }
+    }
+  ]
+}
