@@ -1,0 +1,14 @@
+{
+  "title": "stroke-imaging-increment-mimic: analysis code and protocols for report-derived neuroimaging phenotypes and dynamic ICU risk after acute stroke",
+  "upload_type": "software",
+  "description": "Analysis code, every version of the analysis protocol, and the extraction prompt and rules for the study 'Dynamic Risk Stratification for Short-Term Deterioration After Acute Stroke: Incremental Value of Radiology-Report-Derived Neuroimaging Phenotypes Beyond Dynamic ICU States' (MIMIC-IV v3.1, MIMIC-IV-Note v2.2). Contains no data: MIMIC-IV is available to credentialed users through PhysioNet.",
+  "creators": [
+    {
+      "name": "Lei, Ping",
+      "affiliation": "Institute of Global Health, University of Geneva; School of Public Health, Fudan University",
+      "orcid": "0000-0002-8904-3167"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["stroke", "intensive care", "risk stratification", "landmark analysis", "hidden Markov model", "radiology reports", "large language model", "MIMIC-IV"]
+}
