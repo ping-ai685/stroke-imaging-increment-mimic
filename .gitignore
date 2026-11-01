@@ -1,0 +1,21 @@
+# Running the pipeline inside this repository writes patient-level tables and fitted
+# models here. They must never be committed (PhysioNet data use agreement).
+04_outputs/
+04_outputs_corrected/
+08_paper3_multimodal/*.csv
+07_paper2_eicu/frozen_params*/
+*.csv
+*.csv.gz
+*.parquet
+*.npy
+*.npz
+*.pt
+*.pkl
+*.joblib
+*.png
+*.pdf
+*.tif
+*.html
+__pycache__/
+.venv/
+.DS_Store
